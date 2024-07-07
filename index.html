@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Tennis - The Fastest Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Table Tennis</h1>
+        <nav>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#highlights">Highlights</a></li>
+                <li><a href="#getting-started">Get Started</a></li>
+                <li><a href="#interactive">Quiz</a></li>
+                <li><a href="#ScoreKeeper">ScoreKeeper</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="overview">
+        <h2>Game Overview</h2>
+        <p>Table tennis, also known as ping-pong, is a fast-paced sport played on a rectangular table with a net across the middle. Players use paddles to hit a lightweight ball back and forth. The game originated in England during the early 20th century and has since become popular worldwide.</p>
+    </section>
+
+    <section id="highlights">
+        <h2>Game Highlights</h2>
+        <p>Some of the most memorable moments in table tennis history include intense matches at the Olympic Games and World Championships. Key players like Ma Long and Ding Ning have left a lasting impact on the sport.</p>
+        <img src="One-of-the-best-match-in-table-tennis-Ma-Long-Ovtcharov.webp" alt="Table Tennis Highlights">
+    </section>
+
+    <section id="getting-started">
+        <h2>How to Get Started</h2>
+        <p>To start playing table tennis, you'll need a table, paddles, and a ball. Basic strategies include mastering your serve, practicing your footwork, and improving your reflexes.</p>
+    </section>
+
+    <section id="interactive">
+        <h2>Table Tennis Quiz</h2>
+        <div id="quiz">
+            <p id="question"></p>
+            <button onclick="checkAnswer('a')" id="optionA"></button>
+            <button onclick="checkAnswer('b')" id="optionB"></button>
+            <button onclick="checkAnswer('c')" id="optionC"></button>
+            <button onclick="checkAnswer('d')" id="optionD"></button>
+            <p id="feedback"></p>
+        </div>
+    </section>
+
+    <section id = "ScoreKeeper">
+        <div class = "card">
+            <div class = "img">
+                <img src="table-tennis-7216579_1280.webp" alt="Table Tennis">  
+            </div>
+            <div class = "card-header">
+                <h3>Table Tennis Score Keeper</h3>
+            </div>
+            <hr>
+            <div class = "card-content">
+                <h1><span id = "player1Score">0</span> to <span id = "player2Score">0</span></h1>
+                <p>Use the buttons below to keep score</p>
+                <h2>Playing To   
+                    <select>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                </h2>
+                <div>
+                    <button id = "player1Add">+1 </button>
+                    <button id = "player2Add">+1 </button>
+                    <button id = "reset">Reset</button>
+                </div>
+            </div>
+        </div> 
+   </section>
+    <footer>
+        <p>&copy; 2024 Table Tennis Enthusiasts. All rights reserved.</p>
+        <p><a href="https://www.ittf.com/">Official ITTF Website</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
